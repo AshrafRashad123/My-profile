@@ -1,0 +1,111 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    direction: rtl;
+}
+
+.card {
+    background-color: #1f1f1f;
+    color: #0f0f0f;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    max-width: 350px;
+    width: 90%;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 30px rgba(0, 255, 213, 0.6);
+}
+
+.card img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 2px solid #00ffd5;
+}
+
+h2 {
+    margin: 10px 0;
+    color: #00ffd5;
+}
+
+.specialty {
+    font-size: 14px;
+    color: #bbb;
+    margin-bottom: 10px;
+}
+
+.bio {
+    font-size: 13px;
+    color: #ccc;
+    margin-bottom: 20px;
+}
+
+.links a {
+    display: inline-block;
+    margin: 5px;
+    padding: 8px 12px;
+    background-color: #00ffd5;
+    color: #1a1a1a;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: background 0.3s ease  
+}
+
+@media (max-width: 600px) {
+    .card {
+        padding: 20px;
+    }
+
+    h2 {
+font-size: 20px;
+    }
+
+    .bio {
+        font-size: 12px;
+    }
+
+    .links a {
+        display: block;
+        width: 100%;
+        margin: 8px 0;
+    }
+
+    .card img {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+.links a:hover {
+    background-color: #00bfa5;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+  
+  li {
+    margin: 5px 0;
+    color: #ddd;
+}
+
+.links a i {
+    margin-right: 8px;
+    font-size: 16px;
+
+}
+  
